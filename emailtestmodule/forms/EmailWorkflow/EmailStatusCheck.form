@@ -1,0 +1,62 @@
+{
+    "id": "emailstatuscheck",
+    "schemaVersion": "1.1.0",
+    "name": "EmailStatusCheck",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "email_name",
+            "type": "string",
+            "label": "Name",
+            "readOnly": true,
+            "value": "${context.name}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "age",
+            "type": "string",
+            "label": "Age",
+            "readOnly": true,
+            "value": "${context.age}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "email",
+            "type": "string",
+            "label": "Email",
+            "readOnly": true,
+            "value": "${context.email}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "state",
+            "type": "string",
+            "label": "State",
+            "readOnly": true,
+            "value": "${context.state}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "correct",
+            "text": "Correct",
+            "decisionType": "positive"
+        },
+        {
+            "id": "wrong",
+            "text": "Wrong",
+            "decisionType": "negative"
+        }
+    ]
+}
